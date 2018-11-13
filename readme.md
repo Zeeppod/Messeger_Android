@@ -8,7 +8,7 @@ The given project is intended for simplification and simplicity of dialogue of u
 Sergeev Dmitry
 
 ## Technologies
--Android Studio
+- Android Studio
 
 ## Installing
 ### Приложение
@@ -20,5 +20,7 @@ Sergeev Dmitry
 ### База данных
 - создать проект на сайте firebase.google.com
 - привязать приложение к проекту
+-- скопировать  идентификационный номер приложения находящийся в файле build.gradle
+-- добавить по данному и идентификационному номеру приложение на главной странице проекта на сайте
 - скачать файл конфигурации
 - замениеть файл конфигурации на новый в приложении
