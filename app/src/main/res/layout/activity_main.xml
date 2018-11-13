@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="scrollable">
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/room1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Room 1" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/room2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Room 2" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/room3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Room 3" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/room4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Room 4" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/room5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Room 5" />
+        </android.support.design.widget.TabLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <EditText
+        android:id="@+id/enteredMessege1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="right"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/sendMessegeBtn1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/sendMessegeBtn1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Отправить"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/exit_mess1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/enteredMessege1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appbar" />
+
+</android.support.constraint.ConstraintLayout>
