@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
         mess_exit1.setAdapter(dataAdapter1);
 
-        
+
         enteredMessege1 = findViewById(R.id.enteredMessege1);
 
         tw = findViewById(R.id.mess_item);
